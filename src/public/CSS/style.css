@@ -1,0 +1,23 @@
+.card{
+    border-radius: 10px;
+    
+}
+
+/*Intenta cambiarlo por el row en el boton*/
+.btnh{
+    height: 100px;
+}
+
+.tarea{
+    width: 250px;
+    height: 280px;
+}
+.tarea:hover{
+    height: 290px;
+    width: 290px;
+    cursor: pointer;
+    transition-property: width height;
+    transition-duration: 0.5s;
+    
+
+}

@@ -1,0 +1,31 @@
+<div class="container p-4">
+    <div class="row" style="min-width: 300px;">
+          <div class="col-md-5 ms-auto border border-2 rounded" style="width:280px">
+              <div class="row">
+                   <p class="m-2"> <a href="Homeworks/addHomework" class="btn btn-success fa-solid fa-plus me-2"></a>Agrega una nueva tarea  </p> 
+              </div>
+                   
+            </div>
+    </div>
+   
+    <div class="row animate__animated animate__fadeInUp" style="animation-duration: 2s;">
+        {{#each links}}
+        <div class="col-8 col-xl-3 ">
+            <div class="card tarea border-1 border-success  text-white bg-dark bg-gradiant m-3 p-0 text-center" style="min-width: 17rem; min-height:15rem">
+            <div class="card-header border-success text-uppercase">Tarea de: {{nombre_Materia}}</div>
+               <div class="card-body text-white">
+                   <a href="#" class="link-success" target="_blank"><h4 class="card-title text-uppercase">{{nombreTarea}}</h4></a>
+                    <p>{{timeago fecha_creacion}}</p>
+                   
+                </div>
+                    <a href="/homeworks/delete/{{id}}" class="btn btn-danger">Eliminar</a>
+                    <a href="/homeworks/edit/{{id}}" class="btn btn-success">Edit</a>
+            </div>
+        </div>
+        
+       
+    {{/each}}
+    </div>
+    
+</div>
+

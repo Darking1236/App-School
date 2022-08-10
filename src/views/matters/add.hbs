@@ -1,0 +1,33 @@
+<div class="container-md p-5">
+    <div class="row">
+        <div class="col-md-7 mx-auto">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header text-center">AGREGAR MATERIAS</div>
+                <div class="card-body">
+                    <form action="/matters/add" method="POST">
+                        <div class="mb-3">
+                             <input type="text" class="form-control" name="nombreMateria" placeholder="NOMBRE MATERIA" autofocus>
+                        </div>
+                        <div class="mb-3">
+                             <input type="text" class="form-control" name="nombreProfesor" placeholder="NOMBRE DEL PROFESOR">
+                        </div> 
+                        <div class="input-group">
+                            <span class="col-md-3 text-center">ENTRADA</span>
+                            <span class="col-md-3 mx-auto text-center">SALIDA</span>
+                        </div>       
+                        <div class="input-group mb-3">
+                             <input type="time" value="13:00" class="form-control" name="horaEntrada">                                
+                            <input type="time" value="14:00" class="form-control" name="horaSalida">                              
+                        </div>
+                        <div class="mb-3">
+                           <div class="d-grid gap-2">
+                                <button class="btn btn-success" type="submit">AGREGAR</button>
+                             </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="container p-5">       
+    <div class="table-responsive-md">
+    <table class="table animate__animated animate__fadeInLeft" style="animation-duration: 2s;">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col" class="text-center"><a href="/matters/add" class="btn btn-primary fa-solid fa-plus me-3"></a>MATERIA</th>
+                <th scope="col">LUNES</th>
+                <th scope="col">MARTES</th>
+                <th scope="col">MIERCOLES</th>
+                <th scope="col">JUEVES</th>
+                <th scope="col">VIERNES</th>
+                <th scope="col">SABADOS</th>
+                <th scope="col">DOMINGO</th>
+            </tr>     
+    </thead>
+    <tbody>
+        {{#each links}}
+        <tr>
+            <th scope="row" class="text-center">{{nombreMateria}}
+                <p>{{nombreProfesor}} <br>
+                {{horaEntrada}}-{{horaSalida}}</p>
+                <a href="/matters/delete/{{id}}" class="btn btn-danger fa-solid fa-trash-can"></a>
+                <a href="/matters/edit/{{id}}" class="btn btn-success fa-solid fa-pen-to-square"></a>
+            </th>
+            <td class="p-1 "><button type="button" class="btnh btn btn-danger btn-block w-100"></button></td>
+            <td class="p-1 "><button type="button" class="btnh btn btn-danger btn-block w-100"></button></td>
+            <td class="p-1 "><button type="button" class="btnh btn btn-danger btn-block w-100"></button></td>
+            <td class="p-1 "><button type="button" class="btnh btn btn-danger btn-block w-100"></button></td>
+            <td class="p-1 "><button type="button" class="btnh btn btn-danger btn-block w-100"></button></td>
+            <td class="p-1 "><button type="button" class="btnh btn btn-danger btn-block w-100"></button></td>
+            <td class="p-1 "><button type="button" class="btnh btn btn-danger btn-block w-100"></button></td>            
+        </tr>
+        {{/each}}
+        <tr>
+            <th scope="row" class="text-center">
+                Add
+                <a href="/matters/add" class="btn btn-primary fa-solid fa-plus"></a>
+
+            </th>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
